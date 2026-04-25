@@ -67,7 +67,9 @@ def imprimir_tabela(resultados, ordem_colunas, algoritmo_base):
 
     separador = "-+-".join("-" * largura for largura in larguras)
 
-    print(f"Tabela de tempos (valor em segundos e % relativo ao {algoritmo_base}; negativo = pior)")
+    titulo = f"Tabela de tempos (valor em segundos e % relativo ao {algoritmo_base}; negativo = pior)"
+    print(titulo)
+    print("=" * len(titulo))
     print(montar_linha(cabecalho))
     print(separador)
     for linha in linhas:
